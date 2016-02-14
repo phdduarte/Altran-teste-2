@@ -1,0 +1,396 @@
+@charset "UTF-8";
+@import url(http://fonts.googleapis.com/css?family=Dosis:300,400,600,700|Asap:400,700);
+
+html {
+    font-family: sans-serif;
+    -ms-text-size-adjust: 100%;
+    -webkit-text-size-adjust: 100%
+}
+body {
+	
+}
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+main,
+menu,
+nav,
+section,
+summary {
+    display: block
+}
+html {
+    font-size: 62.5%;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0)
+}
+html {
+    height: 100%;
+    -webkit-text-size-adjust: 100%;
+    -moz-text-size-adjust: 100%;
+    -ms-text-size-adjust: 100%;
+    background-color: #e6e6e6
+}
+body {
+    font-family: "Asap", sans-serif;
+    font-size: 14px;
+    line-height: 1.428571429;
+    color: #222;
+    background-color: #e6e6e6
+}
+input,
+button,
+select,
+textarea {
+    font-family: inherit;
+    font-size: inherit;
+    line-height: inherit
+}
+a {
+	color: #ed1c24;
+	text-decoration: none;
+}
+a:hover,
+a:focus {
+    color: #2a6496;
+	text-decoration: underline;
+}
+h1 {
+	font: bold 36px/100% Arial, Helvetica, sans-serif;
+}
+
+/************************************************************************************
+ESTRUTURA
+*************************************************************************************/
+#pagewrap {
+	padding: auto;
+	width: 1250px;
+	margin: 20px auto;
+}
+header {
+	height: 35px;
+    position: relative;
+    z-index: 100;
+    margin: 70px 0 0;
+
+}
+section {
+	width: 100%;
+	float: left;
+}
+#sidebar {
+	width: 300px;
+	float: right;
+}
+footer {
+	clear: both;
+}
+
+.ad {
+    height: 110px;
+    background: #e6e6e6;
+    margin: 0 0 10px 0;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    z-index: 999
+}
+
+.fixed-nav-bar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 9999;
+  width: 100%;
+  height: 70px;
+  background-color: #ed1c24;
+}
+
+nav a#pull {
+	display: none;
+	color: white;
+    font: 700 14px "Dosis", Sans-serif;
+    text-transform: uppercase;
+	padding: 12px 20px;
+	position: relative;
+	max-width: 1250px;
+}
+
+.navmain {
+    width: 1250px;
+    z-index: 1002;
+    padding: 0;
+    margin: 10px auto 0;
+    position: relative;
+    list-style: none;
+    font-size: 1.1em;
+    max-width: 1250px;
+    font-weight: 700;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.logo {
+    float: left;
+    width: 189px;
+    height: 44px;
+    margin: 3px 20px 18px 20px
+}
+
+.navmain a {
+    outline: none;
+    z-index: 10;
+}
+
+.navmain li {
+    display: inline-block;
+    float: left;
+}
+
+.navmain > li > a {
+    padding: 12px 10px;
+    color: #f8f8f8;
+    text-decoration: none;
+    display: inline-block;
+	text-transform: uppercase
+}
+
+.navmain>li:hover {
+    background: #242424
+}
+.search {
+    float: left;
+    background: white;
+    width: 145px;
+    height: 33px;
+}
+
+.search label {
+    position: relative;
+}
+
+.search input {
+    height: 33px;
+    width: 145px;
+    padding-left: 10px;
+    border: 0;
+    line-height: 33px;
+    margin: 0;
+}
+
+.search label i {
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    color: #a3a3a3;
+    font-size: 16px;
+}
+
+.search input {
+	padding: 12px 20px;
+    color: #f8f8f8;
+    text-decoration: none;
+    display: inline-block;
+    height: 20px;
+    width: 145px;
+    padding-left: 10px;
+    border: 0;
+    line-height: 33px;
+    margin: 0;
+}
+
+.search input[type=submit] {
+    border: 0;
+    background: #CCC;
+    display: none;
+}
+
+.nav-acessadas {
+    float: left;
+    width: 100%;
+    background: #000;
+    /*padding-left: 140px;*/
+    height: 33px;
+
+    position: relative
+}
+
+.nav-acessadas:before {
+    height: 28px;
+    content: "+ ACESSADOS";
+    padding-top: 5px;
+    width: 140px;
+    position: absolute;
+    left: 0;
+    top: 0;
+    font: 700 14px "Dosis", Sans-serif;
+    color: white;
+    padding-left: 20px;
+    background: #ed1c24
+}
+
+.nav-acessadas ul {
+    margin-left: 20px
+}
+
+.nav-acessadas ul li {
+    display: inline-block;
+    margin-right: 30px
+}
+.nav-acessadas ul li a {
+    color: white;
+    display: block;
+    font: 700 14px "Dosis", Sans-serif;
+    text-transform: uppercase
+}
+
+.menu {
+	
+    position: absolute;
+    width: 1250px;
+    left: 0;
+    
+    z-index: 5;
+    background: #242424;
+    border-bottom: 2px solid #ed1c24;
+    height: 220px;
+    transition: .1s .5s
+}
+
+.menu-imagens>ul {
+    font-weight: bold;
+    position: absolute;
+    width: 236px;
+    height: 100%;
+    background: #474747;
+    padding: 10px 0;
+    float: left
+}
+.menu>ul>li {
+    position: relative;
+    text-align: right;
+    padding: 5px 0
+}
+.menu>ul>li>a {
+    color: #fff;
+    font-size: 15px;
+    padding: 0 22px;
+    font-weight: normal
+}
+.menu>ul>li>a:hover {
+    color: #959595
+}
+.menu>ul>li>a:after {
+    display: none;
+    position: absolute;
+    top: 7px;
+    right: 15px;
+    width: 0;
+    height: 0;
+    font-size: 14px, 'Dosis';
+    color: white;
+    content: '❯'
+}
+.menu>ul>li.is_active {
+    background: #242424
+}
+
+/************************************************************************************
+MEDIA QUERIES
+*************************************************************************************/
+/* Para 980px ou menos */
+@media screen and (max-width: 1100px) {
+	
+	#pagewrap {
+		width: 94%;
+	}
+	section {
+		width: 100%;
+	}
+	#sidebar {
+		width: 30%;
+	}
+	
+
+	.fixed-nav-bar {
+		border-bottom: 0;
+	}
+	.fixed-nav-bar ul {
+		display: none;
+		height: auto;
+	}
+	.fixed-nav-bar li {
+  		width: 50%;
+  		float: left;
+  		position: relative;
+  	}
+	.fixed-nav-bar a#pull {
+		text-align: left;
+		display: block;
+		width: 100%;
+		position: relative;
+		text-indent: 25px;
+	}
+	.fixed-nav-bar a#pull:after {
+		content:"";
+		background: url('img/nav-icon.png') no-repeat;
+		width: 30px;
+		height: 30px;
+		display: inline-block;
+		position: absolute;
+		top: 25px;
+		right: 70px;
+	}
+}
+@media screen and (max-width: 1100px){
+	.nav-acessadas{
+		display: none;
+		
+	}
+	header{
+		height: auto;
+	}
+}
+
+/* Para 700px ou menos */
+@media screen and (max-width: 700px) {
+
+	section {
+		width: auto;
+		float: none;
+	}
+	#sidebar {
+		width: auto;
+		float: none;
+	}
+
+}
+
+/* Para 480px ou menos */
+@media screen and (max-width: 480px) {
+
+	header {
+		height: auto;
+	}
+	h1 {
+		font-size: 24px;
+	}
+	#sidebar {
+		display: none;
+	}
+
+}
+
+
+section {
+	background: #f8f8f8;
+}
+#sidebar {
+	background: #f0efef;
+}
+header, section, #sidebar {
+	margin-bottom: 5px;
+}
